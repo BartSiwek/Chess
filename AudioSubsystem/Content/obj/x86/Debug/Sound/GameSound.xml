@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="Wave Bank">Wave Bank
+{
+    Name = Wave Bank;
+    Xbox File = Xbox\Wave Bank.xwb;
+    Windows File = Win\Wave Bank.xwb;
+    Xbox Bank Path Edited = 1;
+    Windows Bank Path Edited = 1;
+    Seek Tables = 1;
+    Compression Preset Name = Compression Preset;
+    Header Last Modified Low = 0;
+    Header Last Modified High = 0;
+    Bank Last Revised Low = 244445375;
+    Bank Last Revised High = 29955621;
+
+    Wave
+    {
+        Name = InGameMusic - 01 - Vivaldi Four Seasons;
+        File = ..\..\..\..\Music and Sounds\Vivaldi\InGameMusic - 01 - Vivaldi Four Seasons.wav;
+        Build Settings Last Modified Low = 1108899968;
+        Build Settings Last Modified High = 29954142;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 34401212;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 735755189;
+            Last Modified High = 29954099;
+        }
+    }
+
+    Wave
+    {
+        Name = InGameMusic - 04 - Vivaldi Four Seasons;
+        File = ..\..\..\..\Music and Sounds\Vivaldi\InGameMusic - 04 - Vivaldi Four Seasons.wav;
+        Build Settings Last Modified Low = 1113389968;
+        Build Settings Last Modified High = 29954142;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 60685244;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1089525189;
+            Last Modified High = 29954099;
+        }
+    }
+
+    Wave
+    {
+        Name = MenuMusic - 01 - Wagner;
+        File = ..\..\..\..\Music and Sounds\Wagner\MenuMusic - 01 - Wagner.wav;
+        Build Settings Last Modified Low = 1113579968;
+        Build Settings Last Modified High = 29954142;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 104313788;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3142915189;
+            Last Modified High = 29954099;
+        }
+    }
+
+    Wave
+    {
+        Name = Wood;
+        File = ..\..\..\..\Music and Sounds\Wood.wav;
+        Build Settings Last Modified Low = 1113759968;
+        Build Settings Last Modified High = 29954142;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 50636;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2630343744;
+            Last Modified High = 29954136;
+        }
+    }
+
+    Wave
+    {
+        Name = OhNo;
+        File = ..\..\..\..\Music and Sounds\OhNo.wav;
+        Build Settings Last Modified Low = 1856523135;
+        Build Settings Last Modified High = 29955561;
+        Compression Preset Name = &lt;none&gt;;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 22050;
+            Bits Per Sample = 0;
+            Play Region Offset = 44;
+            Play Region Length = 35886;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3556620431;
+            Last Modified High = 29955560;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

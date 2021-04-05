@@ -1,0 +1,129 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{371DF41A-97ED-4A6C-A2D7-63F27694130D}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChessMatchStateSubsystem</RootNamespace>
+    <AssemblyName>ChessMatchStateSubsystem</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaCrossPlatformGroupID>ae4fd457-6e1f-4a70-a04b-cc6361a630b4</XnaCrossPlatformGroupID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Match\Chessboard.cs" />
+    <Compile Include="Enums\ChessboardTile.cs" />
+    <Compile Include="Match\ChessMatch.cs" />
+    <Compile Include="ChessMatchState.cs" />
+    <Compile Include="Enums\ChessPlayer.cs" />
+    <Compile Include="Match\Pieces\BlackBishop.cs" />
+    <Compile Include="Match\Pieces\BlackKing.cs" />
+    <Compile Include="Match\Pieces\BlackKnight.cs" />
+    <Compile Include="Match\Pieces\BlackPawn.cs" />
+    <Compile Include="Match\Pieces\BlackPiece.cs" />
+    <Compile Include="Match\Pieces\BlackQueen.cs" />
+    <Compile Include="Match\Pieces\BlackRook.cs" />
+    <Compile Include="Match\Pieces\WhiteBishop.cs" />
+    <Compile Include="Match\Pieces\WhiteKing.cs" />
+    <Compile Include="Match\Pieces\WhiteKnight.cs" />
+    <Compile Include="Match\Pieces\WhitePawn.cs" />
+    <Compile Include="Match\Pieces\WhitePiece.cs" />
+    <Compile Include="Match\Pieces\WhiteQueen.cs" />
+    <Compile Include="Match\Pieces\WhiteRook.cs" />
+    <Compile Include="Match\States\BlackPieceMoving.cs" />
+    <Compile Include="Match\States\BlackPiecePicking.cs" />
+    <Compile Include="Match\States\BlackToWhiteTransfer.cs" />
+    <Compile Include="Match\States\BlackWon.cs" />
+    <Compile Include="Match\States\WhitePieceMoving.cs" />
+    <Compile Include="Match\States\WhiteToBlackTransfer.cs" />
+    <Compile Include="Match\States\WhiteWon.cs" />
+    <Compile Include="Utilities\ChessboardConstants.cs" />
+    <Compile Include="Utilities\ChessboardTileHelper.cs" />
+    <Compile Include="Utilities\ColorChessboardPicker.cs" />
+    <Compile Include="IMatchState.cs" />
+    <Compile Include="Match\ChessPiece.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Match\States\WhitePiecePicking.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>c74cc55b-42a6-4404-93a8-a2c290b2739c</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AudioSubsystem\AudioSubsystem.csproj">
+      <Project>{12146A00-44A2-4F6F-9755-EC66965DA254}</Project>
+      <Name>AudioSubsystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameStateManagmentSubsystem\GameStateManagmentSubsystem.csproj">
+      <Project>{ACD9D0E3-8FBB-4C78-B0A1-A12A92A1237C}</Project>
+      <Name>GameStateManagmentSubsystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GraphicsSubsystem\GraphicsSubsystem.csproj">
+      <Project>{291335ED-B1E6-4ED9-BCDF-4EB2C71C2609}</Project>
+      <Name>GraphicsSubsystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InputSubsystem\InputSubsystem.csproj">
+      <Project>{1916079B-3BFF-4BAA-9726-E443B8E6126E}</Project>
+      <Name>InputSubsystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceSubsystem\ResourceSubsystem.csproj">
+      <Project>{1F3A27AC-F735-41AE-9289-14BDCA966CD4}</Project>
+      <Name>ResourceSubsystem</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
