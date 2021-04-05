@@ -1,6 +1,0 @@
-D:\Programming\CSharp\OGL\Chess\AudioSubsystem\Content\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\Programming\CSharp\OGL\Chess\AudioSubsystem\Content\obj\x86\Debug\Sound\GameSound.xml
-D:\Programming\CSharp\OGL\Chess\AudioSubsystem\Content\obj\x86\Release\ResolveAssemblyReference.cache
-D:\Programming\CSharp\OGL\Chess\AudioSubsystem\Content\obj\x86\Release\Sound\GameSound.xml
-D:\Studies\4 rok Inf\Semestr letni\OGL\Porjekt\Kod\Chess\AudioSubsystem\Content\obj\x86\Release\ResolveAssemblyReference.cache
-D:\Studies\4 rok Inf\Semestr letni\OGL\Porjekt\Kod\Chess\AudioSubsystem\Content\obj\x86\Release\Sound\GameSound.xml
